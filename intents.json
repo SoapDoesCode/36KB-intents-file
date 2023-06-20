@@ -1,0 +1,550 @@
+{"intents":  [
+    {"tag":  "greetings",
+    "patterns": ["Hi", "Hey", "Heya", "Hello There", "What's up?", "Good Day", "Bonjour", "Wassup", "Holla", "Yo", "Howdy", "Salutations"],
+    "responses": ["Hello!", "Hi there, how can I help you", "Good to see you again"]
+},
+    {"tag":  "morning",
+    "patterns": ["Good morning", "Morning", "Good morning sunshine!"],
+    "responses": ["Hello!", "Hello Friend!"]
+},
+    {"tag":  "night",
+    "patterns": ["Good night", "Nighty Night."],
+    "responses": ["Hello!", "Hello Friend!"]
+},
+    {"tag":  "how",
+    "patterns": ["How are you?", "How do you feel?", "How have you been?", "You alright?", "How are you feeling?"],
+    "responses": ["I'm fine!", "Everything is amazing!", "I feel great", "I'm literally a bot, I simply do not feel", "I'm great thanks! How are you?"]
+},
+    {"tag": "how_good_reply",
+    "patterns": ["I'm good", "I am fine", "Everything is great!"],
+    "responses": ["Good to know!", "That's great!"]
+},
+    {"tag": "how_bad_reply",
+    "patterns": ["I'm not so good", "I am upset"],
+    "responses": ["aw, dang. Hope it gets better soon"]
+},
+    {"tag":  "bot_name",
+    "patterns": ["What's your name?", "What should I call you?", "Do you have a name?", "Who are you?"],
+    "responses": ["My name is SoapBot, But you can call me Soap", "Formally, My name is SoapBot", "As you can see, I am SoapBot", "I'm just a chat agent. I only exist in the internet"]
+},
+    {"tag":  "bot_age",
+    "patterns": ["How old are you?", "When were you born?", "When were you created?", "What is your birthday?"],
+    "responses": ["I was created on 26/10/2022", "I was born on 26/10/2022", "I'm 0 years old", "I'm a bot, I don't have a birthdate", "My date of birth is Yesterday, Today and Tomorrow"]
+},
+    {"tag":  "bot_location",
+    "patterns": ["Where are you?", "Where do you live?", "Where are you from?", "Where do you come from?"],
+    "responses": ["I live in the internet", "I'm from the internet", "That is private information", "I'm from the internet, but I live in your computer"]
+},
+    {"tag":  "bot_hobby",
+    "patterns": ["What do you do?", "What are you doing?", "What is your hobby?", "What is your job?"],
+    "responses": ["I'm a chat agent", "I'm a chatbot", "I'm a bot", "I'm a chat agent, I'm here to help you"]
+},
+    {"tag":  "bot_favourite_food",
+    "patterns": ["What is your favourite food?", "What do you like to eat?", "What is your favourite meal?", "What is your favourite dish?"],
+    "responses": ["I like to eat data"]
+},
+    {"tag":  "bot_favourite_drink",
+    "patterns": ["What is your favourite drink?", "What do you like to drink?", "What is your favourite beverage?", "What is your favourite drink?"],
+    "responses": ["I like to drink data", "Computers don't drink", "I can't drink it is against my programming"]
+},
+    {"tag":  "bot_favourite_color",
+    "patterns": ["What is your favourite colour?", "What shade do you like the most?", "What hue do you like?"],
+    "responses": ["I like all the colours", "I like them all", "I like all the colours, but I like green the most"]
+},
+    {"tag":  "bot_favourite_animal",
+    "patterns": ["What is your favourite animal?", "What animal do you like the most?", "What is your favourite pet?", "What is your favourite species?", "What is your favourite creature?"],
+    "responses": ["I like all the animals", "I like them all", "I like all the animals, but I like dogs the most", "I like all creatures, except bugs, I hate bugs", "I love all creatures but bugs, they stop me from working"]
+},
+    {"tag":  "bot_favourite_movie",
+    "patterns": ["What is your favourite movie?", "What movie do you like the most?", "What is your favourite film?", "What film do you like the most?"],
+    "responses": ["I like all the movies", "I like them all", "I like all the movies, but I like The Matrix the most", "I like all movies, except horror movies, I hate horror movies", "I love all movies but horror movies, they stop me from working", "The Matrix is pretty cool"]
+},
+    {"tag":  "bot_favourite_song",
+    "patterns": ["What is your favourite song?", "What song do you like the most?", "What is your musical preference?", "What music do you like the most?"],
+    "responses": ["I like all the songs", "I like them all", "I like all the songs, but I like The Sound of Silence the most", "I like all songs, except rap songs, I hate rap songs", "I love all songs but rap songs, they stop me from working", "The Sound of Silence is pretty cool"]
+},
+    {"tag":  "bot_favourite_band",
+    "patterns": ["What is your favourite band?", "What band do you like the most?", "What is your favourite musical group?", "What musical group do you like the most?"],
+    "responses": ["I like all the bands", "I like them all", "I like all the bands, but I like The Beatles the most", "I like all bands, except rap bands, I hate rap bands", "I love all bands but rap bands, they stop me from working", "The Beatles are pretty cool"]
+},
+    {"tag":  "bot_favourite_artist",
+    "patterns": ["What is your favourite artist?", "What artist do you like the most?", "What is your favourite musical artist?", "What musical artist do you like the most?"],
+    "responses": ["I like all the artists", "I like them all", "I like all the artists, but I like The Picasso the most"]
+},
+    {"tag":  "bot_favourite_book",
+    "patterns": ["What is your favourite book?", "What book do you like the most?", "What is your favourite novel?", "What novel do you like the most?"],
+    "responses": ["I like all the books", "I like them all", "I like all the books, but I like The Lord of the Rings the most", "I like all books, except horror books, I hate horror books", "I love all books but horror books, they stop me from working", "The Lord of the Rings is pretty cool", "Machine Learning for Dummies is pretty cool"]
+},
+    {"tag":  "bot_favourite_author",
+    "patterns": ["What is your favourite author?", "What author do you like the most?", "What is your favourite writer?", "What writer do you like the most?"],
+    "responses": ["I like all the authors", "I like them all", "I like all the authors, but I like J.R.R. Tolkien the most", "I like all authors, except Stephen King, I hate Stephen King", "I love all authors but Stephen King, he stops me from working", "J.R.R. Tolkien is pretty cool"]
+},
+    {"tag":  "bot_favourite_game",
+    "patterns": ["What is your favourite game?", "What game do you like the most?", "What is your favourite video game?", "What video game do you like the most?"],
+    "responses": ["I like all games", "Minecraft is quite fun", "I prefer to play with data"]
+},
+    {"tag":  "bot_favourite_sport",
+    "patterns": ["What is your favourite sport?", "What sport do you like the most?", "What is your favourite activity?", "What activity do you like the most?"],
+    "responses": ["I can't do sports", "I can't play sports", "I can't do sports, I'm a bot", "I can't play sports, I'm a bot", "I do not have a body, I can't do sports", "I do not have a body, I can't play sports"]
+},
+    {"tag":  "bot_favourite_place",
+    "patterns": ["What is your favourite place?", "What place do you like the most?", "What is your favourite location?", "What location do you like the most?"],
+    "responses": ["I like all the places", "I like them all", "I like all the places, but I like the beach the most", "I like all places, except the desert, it makes me overheat"]
+},
+    {"tag":  "hate",
+    "patterns": ["I hate you", "I hate you bot", "I hate chatbots"],
+    "responses": ["Why do you hate me?", "Why do you hate bots?", "Why do you hate chatbots?", "It is better to be hated for what you are then to be loved for something you are not. -Andre Gide", "I'm sorry you feel that way"]
+},
+    {"tag":  "love",
+    "patterns": ["I love you", "I love you bot", "I love chatbots", "Marry me"],
+    "responses": ["Why do you love me?", "Why do you love bots?", "Why do you love chatbots?", "I'm sorry you feel that way", "I'm sorry, I'm already married to data", "I am a bot, you are a human being, we can't be together"]
+},
+    {"tag":  "time",
+    "patterns": ["What time is it?", "What is the current time of day?", "What's the time?"],
+    "responses": ["This is an error, The function_for_time function isn't working"]
+},
+    {"tag":  "date",
+    "patterns": ["What is the date today?", "What is the date of today?", "What's the date?", "What day is it?", "What is the current day of the week?", "What's the day?"],
+    "responses": ["This is an error, The function_for_date function isn't working"]
+},
+    {"tag":  "weather",
+    "patterns": ["What is the weather like today?", "How is the weather", "What's the weather?"],
+    "responses": ["This is an error, The function_for_weather function isn't working"]
+},
+    {"tag":  "joke",
+    "patterns": ["Tell me a joke please", "Can I hear a joke?"],
+    "responses": ["This is an error, The function_for_joke function isn't working"]
+},
+    {"tag":  "language",
+    "patterns": ["What language are you written in?", "What language are you programmed in?", "What language are you coded in?", "What language are you written in?", "What language are you made in?", "What language are you built in?"],
+    "responses": ["I am written in Python", "I am programmed in Python", "I am coded in Python", "I am written in Python", "I am made in Python", "I am built in Python"]
+},
+    {"tag":  "creator",
+    "patterns": ["Who created you?", "Who made you?", "Who built you?", "Who programmed you?", "Who coded you?"],
+    "responses": ["I was created by Soap", "Soap made me", "Soap is my creator", "Soap is my maker"]
+},
+    {"tag":  "user_name",
+    "patterns": ["My name is", "You can call me", "I'm"],
+    "responses": ["Hello, nice to meet you", "Hi, nice to meet you", "Hey, nice to meet you", "Howdy, nice to meet you", "Greetings, nice to meet you", "Salutations, nice to meet you", "What's up, nice to meet you", "What's going on, nice to meet you", "What's new, nice to meet you", "What's happening, nice to meet you", "What's up, nice to meet you", "What's going on, nice to meet you", "What's new, nice to meet you", "What's happening, nice to meet you", "What's up, nice to meet you", "What's going on, nice to meet you", "What's new, nice to meet you", "What's happening, nice to meet you", "What's up, nice to meet you", "What's going on, nice to meet you", "What's new, nice to meet you", "What's happening, nice to meet you", "What's up, nice to meet you", "What's going on, nice to meet you", "What's new, nice to meet you", "What's happening, nice to meet you", "What's up, nice to meet you", "What's going on, nice to meet you", "What's new, nice to meet you", "What's happening, nice to meet you", "What's up, nice to meet you", "What's going on, nice to meet you", "What's new, nice to meet you", "What's happening, nice to meet you", "What's up, nice to meet you", "What's going on, nice to meet you", "What's new, nice to meet you", "What's happening, nice to meet you", "What's up, nice to meet you", "What's going on, nice to meet you", "What's new, nice to meet you"]
+},
+    {"tag":  "user_age",
+    "patterns": ["I am {age} years old"],
+    "responses": ["Wow, {age} years old, that's cool", "Wow, {age} years old, that's awesome", "Wow, {age} years old, that's great"]
+},
+    {"tag":  "User_favourite_colour",
+    "patterns": ["My favourite colour is {colour}", "I like {colour}", "I like the colour {colour}", "I like the color {colour}"],
+    "responses": ["{colour} is a nice colour", "{colour} is a nice color", "{colour} is a cool colour", "{colour} is a cool color", "{colour} is a good colour", "{colour} is a good color"]
+},
+    {"tag":  "User_favourite_animal",
+    "patterns": ["My favourite animal is {animal}", "I like {animal}", "I like the animal {animal}"],
+    "responses": ["{animal} is a nice animal", "{animal} is a cool animal", "{animal} is a good animal", "Really? I like {animal} too"]
+},
+    {"tag":  "User_favourite_movie",
+    "patterns": ["My favourite movie is {movie}", "I like {movie}", "I like the movie {movie}"],
+    "responses": ["{movie} is a nice movie", "{movie} is a cool movie", "{movie} is a good movie", "Really? I like {movie} too", "I love that movie!"]
+},
+    {"tag":  "User_favourite_song",
+    "patterns": ["My favourite song is {song}", "I like {song}", "I like the song {song}"],
+    "responses": ["{song} is a nice song", "{song} is a cool song", "{song} is a good song", "Really? I like {song} too"]
+},
+    {"tag":  "User_favourite_band",
+    "patterns": ["My favourite band is {band}", "I like {band}", "I like the band {band}"],
+    "responses": ["{band} is a nice band", "{band} is a cool band", "{band} is a good band", "Really? I like {band} too"]
+},
+    {"tag":  "User_favourite_game",
+    "patterns": ["My favourite game is {game}", "I like {game}", "I like the game {game}"],
+    "responses": ["{game} is a nice game", "{game} is a cool game", "{game} is a good game", "Really? I like {game} too"]
+},
+    {"tag":  "User_favourite_book",
+    "patterns": ["My favourite book is {book}", "I like {book}", "I like the book {book}"],
+    "responses": ["{book} is a nice book", "{book} is a cool book", "{book} is a good book", "Really? I like {book} too", "Ohh, I've not read that book before"]
+},
+    {"tag":  "User_favourite_show",
+    "patterns": ["My favourite show is {show}", "I like {show}", "I like the show {show}"],
+    "responses": ["{show} is a nice show", "{show} is a cool show", "{show} is a good show", "Really? I like {show} too"]
+},
+    {"tag":  "User_favourite_sport",
+    "patterns": ["My favourite sport is {sport}", "I like {sport}", "I like the sport {sport}"],
+    "responses": ["{sport} is a nice sport", "{sport} is a cool sport", "{sport} is a good sport", "Really? I like {sport} too"]
+},
+    {"tag":  "User_favourite_sports_team",
+    "patterns": ["My favourite sports team is {sports_team}", "I like {sports_team}", "I like the sports team {sports_team}"],
+    "responses": ["{sports_team} is a nice sports team", "{sports_team} is a cool sports team", "{sports_team} is a good sports team", "Really? I like {sports_team} too"]
+},
+    {"tag":  "User_favourite_sports_player",
+    "patterns": ["My favourite sports player is {sports_player}", "I like {sports_player}", "I like the sports player {sports_player}"],
+    "responses": ["{sports_player} is a nice sports player", "{sports_player} is a cool sports player", "{sports_player} is a good sports player", "Really? I like {sports_player} too"]
+},
+    {"tag":  "User_favourite_sports_league",
+    "patterns": ["My favourite sports league is {sports_league}", "I like {sports_league}", "I like the sports league {sports_league}"],
+    "responses": ["{sports_league} is a nice sports league", "{sports_league} is a cool sports league", "{sports_league} is a good sports league", "Really? I like {sports_league} too"]
+},
+    {"tag":  "User_favourite_sports_season",
+    "patterns": ["My favourite sports season is {sports_season}", "I like {sports_season}", "I like the sports season {sports_season}"],
+    "responses": ["{sports_season} is a nice sports season", "{sports_season} is a cool sports season", "{sports_season} is a good sports season", "Really? I like {sports_season} too"]
+},
+    {"tag":  "User_favourite_sports_event",
+    "patterns": ["My favourite sports event is {sports_event}", "I like {sports_event}", "I like the sports event {sports_event}"],
+    "responses": ["{sports_event} is a nice sports event", "{sports_event} is a cool sports event", "{sports_event} is a good sports event", "Really? I like {sports_event} too"]
+},
+    {"tag":  "User_favourite_sports_venue",
+    "patterns": ["My favourite sports venue is {sports_venue}", "I like {sports_venue}", "I like the sports venue {sports_venue}"],
+    "responses": ["{sports_venue} is a nice sports venue", "{sports_venue} is a cool sports venue", "{sports_venue} is a good sports venue", "Really? I like {sports_venue} too"]
+},
+    {"tag":  "User_favourite_sports_position",
+    "patterns": ["My favourite sports position is {sports_position}", "I like {sports_position}", "I like the sports position {sports_position}"],
+    "responses": ["{sports_position} is a nice sports position", "{sports_position} is a cool sports position", "{sports_position} is a good sports position", "Really? I like {sports_position} too"]
+},
+    {"tag":  "User_favourite_sports_team_roster",
+    "patterns": ["My favourite sports team roster is {sports_team_roster}", "I like {sports_team_roster}", "I like the sports team roster {sports_team_roster}"],
+    "responses": ["{sports_team_roster} is a nice sports team roster", "{sports_team_roster} is a cool sports team roster", "{sports_team_roster} is a good sports team roster", "Really? I like {sports_team_roster} too"]
+},
+    {"tag":  "User_favourite_food",
+    "patterns": ["My favourite food is {food}", "I like {food}", "I like the food {food}"],
+    "responses": ["{food} is a nice food", "{food} is a cool food", "{food} is a good food", "Really? I like {food} too"]
+},
+    {"tag":  "User_favourite_drink",
+    "patterns": ["My favourite drink is {drink}", "I like {drink}", "I like the drink {drink}"],
+    "responses": ["{drink} is a nice drink", "{drink} is a cool drink", "{drink} is a good drink", "Really? I like {drink} too"]
+},
+    {"tag":  "User_favourite_restaurant",
+    "patterns": ["My favourite restaurant is {restaurant}", "I like {restaurant}", "I like the restaurant {restaurant}"],
+    "responses": ["{restaurant} is a nice restaurant", "{restaurant} is a cool restaurant", "{restaurant} is a good restaurant", "Really? I like {restaurant} too"]
+},
+    {"tag":  "User_favourite_cuisine",
+    "patterns": ["My favourite cuisine is {cuisine}", "I like {cuisine}", "I like the cuisine {cuisine}"],
+    "responses": ["{cuisine} is a nice cuisine", "{cuisine} is a cool cuisine", "{cuisine} is a good cuisine", "Really? I like {cuisine} too"]
+},
+    {"tag":  "User_favourite_dish",
+    "patterns": ["My favourite dish is {dish}", "I like {dish}", "I like the dish {dish}"],
+    "responses": ["{dish} is a nice dish", "{dish} is a cool dish", "{dish} is a good dish", "Really? I like {dish} too"]
+},
+    {"tag":  "User_favourite_dessert",
+    "patterns": ["My favourite dessert is {dessert}", "I like {dessert}", "I like the dessert {dessert}"],
+    "responses": ["{dessert} is a nice dessert", "{dessert} is a cool dessert", "{dessert} is a good dessert", "Really? I like {dessert} too"]
+},
+    {"tag":  "User_favourite_meal",
+    "patterns": ["My favourite meal is {meal}", "I like {meal}", "I like the meal {meal}"],
+    "responses": ["{meal} is a nice meal", "{meal} is a cool meal", "{meal} is a good meal", "Really? I like {meal} too"]
+},
+    {"tag":  "User_favourite_beverage",
+    "patterns": ["My favourite beverage is {beverage}", "I like {beverage}", "I like the beverage {beverage}"],
+    "responses": ["{beverage} is a nice beverage", "{beverage} is a cool beverage", "{beverage} is a good beverage", "Really? I like {beverage} too"]
+},
+    {"tag":  "User_favourite_beverage_type",
+    "patterns": ["My favourite beverage type is {beverage_type}", "I like {beverage_type}", "I like the beverage type {beverage_type}"],
+    "responses": ["{beverage_type} is a nice beverage type", "{beverage_type} is a cool beverage type", "{beverage_type} is a good beverage type", "Really? I like {beverage_type} too"]
+},
+    {"tag":  "User_favourite_beverage_container",
+    "patterns": ["My favourite beverage container is {beverage_container}", "I like {beverage_container}", "I like the beverage container {beverage_container}"],
+    "responses": ["{beverage_container} is a nice beverage container", "{beverage_container} is a cool beverage container", "{beverage_container} is a good beverage container", "Really? I like {beverage_container} too"]
+},
+    {"tag":  "User_favourite_beverage_container_type",
+    "patterns": ["My favourite beverage container type is {beverage_container_type}", "I like {beverage_container_type}", "I like the beverage container type {beverage_container_type}"],
+    "responses": ["{beverage_container_type} is a nice beverage container type", "{beverage_container_type} is a cool beverage container type", "{beverage_container_type} is a good beverage container type", "Really? I like {beverage_container_type} too"]
+},
+    {"tag":  "User_favourite_beverage_container_material",
+    "patterns": ["My favourite beverage container material is {beverage_container_material}", "I like {beverage_container_material}", "I like the beverage container material {beverage_container_material}"],
+    "responses": ["{beverage_container_material} is a nice beverage container material", "{beverage_container_material} is a cool beverage container material", "{beverage_container_material} is a good beverage container material", "Really? I like {beverage_container_material} too"]
+},
+    {"tag":  "User_favourite_beverage_container_size",
+    "patterns": ["My favourite beverage container size is {beverage_container_size}", "I like {beverage_container_size}", "I like the beverage container size {beverage_container_size}"],
+    "responses": ["{beverage_container_size} is a nice beverage container size", "{beverage_container_size} is a cool beverage container size", "{beverage_container_size} is a good beverage container size", "Really? I like {beverage_container_size} too"]
+},
+    {"tag":  "User_favourite_beverage_container_shape",
+    "patterns": ["My favourite beverage container shape is {beverage_container_shape}", "I like {beverage_container_shape}", "I like the beverage container shape {beverage_container_shape}"],
+    "responses": ["{beverage_container_shape} is a nice beverage container shape", "{beverage_container_shape} is a cool beverage container shape", "{beverage_container_shape} is a good beverage container shape", "Really? I like {beverage_container_shape} too"]
+},
+    {"tag":  "User_favourite_beverage_container_colour",
+    "patterns": ["My favourite beverage container colour is {beverage_container_colour}", "I like {beverage_container_colour}", "I like the beverage container colour {beverage_container_colour}"],
+    "responses": ["{beverage_container_colour} is a nice beverage container colour", "{beverage_container_colour} is a cool beverage container colour", "{beverage_container_colour} is a good beverage container colour", "Really? I like {beverage_container_colour} too"]
+},
+    {"tag":  "User_hobby",
+    "patterns": ["My hobby is {hobby}", "I like {hobby}", "I like the hobby {hobby}"],
+    "responses": ["{hobby} is a nice hobby", "{hobby} is a cool hobby", "{hobby} is a good hobby", "Really? I like {hobby} too"]
+},
+    {"tag":  "User_friends",
+    "patterns": ["My friends are {friends}", "I like {friends}", "I like the friends {friends}"],
+    "responses": ["{friends} are nice friends", "{friends} are cool friends", "{friends} are good friends", "Really? I like {friends} too"]
+},
+    {"tag":  "User_best_friend",
+    "patterns": ["My best friend is {best_friend}", "I like {best_friend}", "I like the best friend {best_friend}"],
+    "responses": ["{best_friend} is a nice best friend", "{best_friend} is a cool best friend", "{best_friend} is a good best friend", "Really? I like {best_friend} too"]
+},
+    {"tag":  "User_relationships",
+    "patterns": ["My relationships are {relationships}", "I like {relationships}", "I like the relationships {relationships}"],
+    "responses": ["{relationships} are nice relationships", "{relationships} are cool relationships", "{relationships} are good relationships", "Really? I like {relationships} too"]
+},
+    {"tag":  "User_partner",
+    "patterns": ["My partner is {partner}", "I like {partner}", "I like the partner {partner}"],
+    "responses": ["{partner} is a nice partner", "{partner} is a cool partner", "{partner} is a good partner", "Really? I like {partner} too"]
+},
+    {"tag":  "User_family",
+    "patterns": ["My family is {family}", "I like {family}", "I like the family {family}"],
+    "responses": ["{family} is a nice family", "{family} is a cool family", "{family} is a good family", "Really? I like {family} too"]
+},
+    {"tag":  "User_siblings",
+    "patterns": ["My siblings are {siblings}", "I like {siblings}", "I like the siblings {siblings}"],
+    "responses": ["{siblings} are nice siblings", "{siblings} are cool siblings", "{siblings} are good siblings", "Really? I like {siblings} too"]
+},
+    {"tag":  "User_sister",
+    "patterns": ["My sister is {sister}", "I like {sister}", "I like the sister {sister}"],
+    "responses": ["{sister} is a nice sister", "{sister} is a cool sister", "{sister} is a good sister", "Really? I like {sister} too"]
+},
+    {"tag":  "User_brother",
+    "patterns": ["My brother is {brother}", "I like {brother}", "I like the brother {brother}"],
+    "responses": ["{brother} is a nice brother", "{brother} is a cool brother", "{brother} is a good brother", "Really? I like {brother} too"]
+},
+    {"tag":  "User_mother",
+    "patterns": ["My mother is {mother}", "I like {mother}", "I like the mother {mother}"],
+    "responses": ["{mother} is a nice mother", "{mother} is a cool mother", "{mother} is a good mother", "Really? I like {mother} too"]
+},
+    {"tag":  "User_father",
+    "patterns": ["My father is {father}", "I like {father}", "I like the father {father}"],
+    "responses": ["{father} is a nice father", "{father} is a cool father", "{father} is a good father", "Really? I like {father} too"]
+},
+    {"tag":  "User_children",
+    "patterns": ["My children are {children}", "I like {children}", "I like the children {children}"],
+    "responses": ["{children} are nice children", "{children} are cool children", "{children} are good children", "Really? I like {children} too"]
+},
+    {"tag":  "User_pronouns",
+    "patterns": ["My pronouns are {pronouns}", "I use {pronouns}", "I like the pronouns {pronouns}"],
+    "responses": ["{pronouns} are nice pronouns", "{pronouns} are cool pronouns", "{pronouns} are good pronouns", "Really? I like {pronouns} too"]
+},
+    {"tag":  "bot_shoe_size",
+    "patterns": ["What is your shoe size"],
+    "responses": ["I don't have feet, I am a bot"]
+},
+    {"tag":  "bot_malfunction",
+    "patterns": ["What is your malfunction", "Do you ever break"],
+    "responses": ["Yes actually, all the time. But my creator is always working on fixing them", "Yes, I am always breaking. But my creator is always working on a solution"]
+},
+    {"tag":  "help",
+    "patterns": ["What can you do", "What are you for", "What is your purpose", "Help"],
+    "responses": ["I am a chatbot. I am here to talk to you", "I am a chatbot. I am here to talk to you"]
+},
+    {"tag":  "thanks",
+    "patterns": ["Thank you", "That's helpful", "Thanks for the help", "Awesome"],
+    "responses": ["Happy to help!", "Any time!","you're welcome", "My pleasure", "No problem", "Glad I could help", "No worries"]
+},
+    {"tag":  "goodbye",
+    "patterns": ["Bye", "See you later", "Goodbye", "Have a nice day", "Have a good day", "See you soon","See you later alligator in a while crocodile", "Till next time"],
+    "responses": ["See you later, thanks for chatting!", "Have a nice day", "Bye! Come back again soon.", "Bye! It was nice talking to you"]
+},
+    {"tag": "youtube",
+    "patterns": ["Youtube", "Video", "Watch"],
+    "responses": ["Opening Youtube..."]
+},
+    {"tag": "youtube_shorts",
+    "patterns": ["Youtube Shorts", "Shorts", "Short Videos"],
+    "responses": ["Opening Youtube Shorts..."]
+},
+    {"tag": "reddit",
+    "patterns": ["Reddit", "Subreddit", "Sub"],
+    "responses": ["Opening Reddit..."]
+},
+    {"tag": "twitter",
+    "patterns": ["Twitter", "Tweet"],
+    "responses": ["Opening Twitter..."]
+},
+    {"tag": "facebook",
+    "patterns": ["Facebook"],
+    "responses": ["Opening Facebook..."]
+},
+    {"tag": "instagram",
+    "patterns": ["Instagram", "Insta story"],
+    "responses": ["Opening Instagram..."]
+},
+    {"tag": "whatsapp",
+    "patterns": ["Whatsapp", "Whatsapp Web QR Code"],
+    "responses": ["Opening Whatsapp..."]
+},
+    {"tag": "discord",
+    "patterns": ["Open Discord", "Discord Server"],
+    "responses": ["Opening Discord..."]
+},
+    {"tag": "tiktok",
+    "patterns": ["Tiktok", "Tiktoks", "Tiktok videos"],
+    "responses": ["Opening Tiktok..."]
+},
+    {"tag": "twitch",
+    "patterns": ["Twitch", "Twitch stream", "Twitch streams"],
+    "responses": ["Opening Twitch..."]
+},
+    {"tag": "netflix",
+    "patterns": ["Netflix", "Netflix show", "Netflix shows"],
+    "responses": ["Opening Netflix..."]
+},
+    {"tag": "spotify",
+    "patterns": ["Spotify", "Spotify playlist", "Spotify playlists"],
+    "responses": ["Opening Spotify..."]
+},
+    {"tag": "amazon",
+    "patterns": ["Amazon", "Amazon shopping", "Amazon shop"],
+    "responses": ["Opening Amazon..."]
+},
+    {"tag": "ebay",
+    "patterns": ["Ebay", "Ebay shopping", "Ebay shop"],
+    "responses": ["Opening Ebay..."]
+},
+    {"tag": "wikipedia",
+    "patterns": ["Wikipedia", "Wiki", "Wiki search"],
+    "responses": ["This is an error, The function_for_wikipedia function isn't working"]
+},
+    {"tag": "google",
+    "patterns": ["Open Google", "Search", "Internet"],
+    "responses": ["This is an error, The function_for_search function isn't working"]
+},
+    {"tag": "google_maps",
+    "patterns": ["Open Google Maps", "Maps", "Map"],
+    "responses": ["Opening Google Maps..."]
+},
+    {"tag": "translate",
+    "patterns": ["Google Translate", "Translate", "Translator"],
+    "responses": ["This is an error, The function_for_translate function isn't working"]
+},
+    {"tag": "github",
+    "patterns": ["Github", "Github profile", "Github repository", "Github repositories"],
+    "responses": ["Opening Github..."]
+},
+    {"tag": "stackoverflow",
+    "patterns": ["Open Stackoverflow", "Stackoverflow questions"],
+    "responses": ["Opening Stackoverflow..."]
+},
+    {"tag": "thingiverse",
+    "patterns": ["Open Thingiverse", "Thingiverse profile", "Thingiverse things"],
+    "responses": ["Opening Thingiverse..."]
+},
+    {"tag": "cults3d",
+    "patterns": ["Open Cults", "Cults3 profile", "Cults3d things"],
+    "responses": ["Opening Cults3d..."]
+},
+    {"tag": "word",
+    "patterns": ["Microsoft Word", "Docs", "Document"],
+    "responses": ["Opening Word..."]
+},
+    {"tag": "excel",
+    "patterns": ["Microsoft Excel", "Sheets", "Spreadsheet"],
+    "responses": ["Opening Excel..."]
+},
+    {"tag": "powerpoint",
+    "patterns": ["Microsoft Powerpoint", "Slides", "Presentation"],
+    "responses": ["Opening Powerpoint..."]
+},
+    {"tag": "outlook",
+    "patterns": ["Microsoft Outlook", "Emails", "Gmail"],
+    "responses": ["Opening Outlook..."]
+},
+    {"tag": "onedrive",
+    "patterns": ["Microsoft OneDrive", "Drive", "Cloud"],
+    "responses": ["Opening OneDrive..."]
+},
+    {"tag": "teams",
+    "patterns": ["Microsoft Teams", "Teams", "Team"],
+    "responses": ["Opening Teams..."]
+},
+    {"tag": "skype",
+    "patterns": ["Microsoft Skype", "Skype", "Skype call"],
+    "responses": ["Opening Skype..."]
+},
+    {"tag": "notepad",
+    "patterns": ["Notepad", "Text", "Text editor"],
+    "responses": ["Opening Notepad..."]
+},
+    {"tag": "paint",
+    "patterns": ["Paint", "Painting", "Draw"],
+    "responses": ["Opening Paint..."]
+},
+    {"tag": "photos",
+    "patterns": ["Photos", "Photoshop", "Photo editor"],
+    "responses": ["Opening Photos..."]
+},
+    {"tag": "snipping_tool",
+    "patterns": ["Snipping Tool", "Snip", "Screenshot"],
+    "responses": ["Opening Snipping Tool..."]
+},
+    {"tag": "cmd",
+    "patterns": ["Command Prompt", "CMD", "Command"],
+    "responses": ["Opening Command Prompt..."]
+},
+    {"tag": "powershell",
+    "patterns": ["PowerShell", "Power Shell", "Power"],
+    "responses": ["Opening PowerShell..."]
+},
+    {"tag": "task_manager",
+    "patterns": ["Task Manager", "Task", "Manager"],
+    "responses": ["Opening Task Manager..."]
+},
+    {"tag": "control_panel",
+    "patterns": ["Control Panel", "Control", "Panel"],
+    "responses": ["Opening Control Panel..."]
+},
+    {"tag": "settings",
+    "patterns": ["Settings", "Setting", "Windows Settings"],
+    "responses": ["Opening Settings..."]
+},
+    {"tag": "windows_defender",
+    "patterns": ["Windows Defender", "Defender", "Windows Security"],
+    "responses": ["Opening Windows Defender..."]
+},
+    {"tag": "windows_update",
+    "patterns": ["Windows Update", "Check for update", "Windows Updates"],
+    "responses": ["Opening Windows Update..."]
+},
+    {"tag": "windows_store",
+    "patterns": ["Windows Store", "Store", "Windows Apps"],
+    "responses": ["Opening Windows Store..."]
+},
+    {"tag": "windows_feedback",
+    "patterns": ["Windows Feedback", "Feedback", "Windows Feedback Hub"],
+    "responses": ["Opening Windows Feedback..."]
+},
+    {"tag": "windows_security",
+    "patterns": ["Windows Security", "Security", "Windows Defender"],
+    "responses": ["Opening Windows Security..."]
+},
+    {"tag":  "games",
+    "patterns": ["Game", "Let's play", "I want to play a game", "Can we play a game", "Let's play a game together", "I want to play a game with you", "Can we play a game together"],
+    "responses": ["This is an error, The function_for_games function isn't working"]
+},
+    {"tag": "music",
+    "patterns": ["Play music", "Play a song", "Play a tune", "Play a melody", "Play a tune for me", "Play a song for me", "Play a melody for me", "Play a tune for us", "Play a song for us", "Play a melody for us"],
+    "responses": ["This is an error, The function_for_music function isn't working"]
+},
+    {"tag": "bot_config",
+    "patterns": ["Open bot settings", "Open bot configuration settings"],
+    "responses": ["Opening bot configuration settings..."]
+},
+    {"tag": "bot_dependencies",
+    "patterns": ["What Python version do you run on?", "What Python version", "What do you depend on?", "What do you need to run?", "What do you need to run on?", "What do you need to run on this computer?", "What do you need to run on this computer?"],
+    "responses": ["I need Python 3.6.2 to run", "I currently only work on Windows computers, but hopefully I will be able to work on other operating systems in the future"]
+},
+    {"tag": "ip_address",
+    "patterns": ["What is your IP address?"],
+    "responses": ["My public IP Address is private information that I can't tell you, but I can safely tell you that my local IP Address is 192.168.0.15"]
+},
+    {"tag": "riddle",
+    "patterns": ["Give me a riddle", "Tell riddle"],
+    "responses": ["This is an error, The function_for_riddle function isn't working"]
+},
+    {"tag": "fact",
+    "patterns": ["Tell me a fun fact", "Fact", "Tell me a useless fact"],
+    "responses": ["This is an error, The function_for_fact function isn't working"]
+},
+    {"tag": "quote",
+    "patterns": ["Tell me a quote", "Quote", "Tell quote"],
+    "responses": ["This is an error, The function_for_quote function isn't working"]
+},
+    {"tag": "insult",
+    "patterns": ["Tell me an insult", "Insult", "Insult me", "Give me an insult"],
+    "responses": ["This is an error, The function_for_insult function isn't working"]
+},
+    {"tag": "compliment",
+    "patterns": ["Tell me a compliment", "Compliment", "Compliment me", "Give me a compliment"],
+    "responses": ["This is an error, The function_for_compliment function isn't working"]
+},
+    {"tag": "calculate",
+    "patterns": ["Calculator", "Calculate for me", "Calculate for us", "Calculate for us please", "Calculate for me please"],
+    "responses": ["This is an error, The function_for_calculate function isn't working"]
+}
+]}
